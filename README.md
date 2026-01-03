@@ -3,7 +3,7 @@ riding Service Management is a simple and efficient system designed to manage ri
 
 
 
-just download and run website code using cmd 
+just download and run website.txt code using cmd 
 
 thanks
 regards:
