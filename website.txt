@@ -1,0 +1,6 @@
+docker container
+docker compose up --build
+website
+http://localhost:8080
+Database
+http://localhost:8081
