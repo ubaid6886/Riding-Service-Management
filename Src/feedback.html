@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Feedback Form</title>
+
+    <!-- Bootstrap 3 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+    <!-- Optional Custom CSS -->
+    <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+
+<div class="container">
+    <div class="row" style="margin-top:50px;">
+        <div class="col-md-6 col-md-offset-3 form-container">
+
+            <h2 class="text-center">Feedback</h2>
+            <p class="text-center">Please provide your valuable feedback below</p>
+
+            <form id="feedback_form" method="POST" action="cardetails.html">
+
+                <!-- Experience Rating -->
+                <div class="form-group">
+                    <label>How do you rate your overall experience?</label><br>
+
+                    <label class="radio-inline">
+                        <input type="radio" name="experience" id="exp_bad" value="bad" required>
+                        Bad
+                    </label>
+
+                    <label class="radio-inline">
+                        <input type="radio" name="experience" id="exp_avg" value="average">
+                        Average
+                    </label>
+
+                    <label class="radio-inline">
+                        <input type="radio" name="experience" id="exp_good" value="good">
+                        Good
+                    </label>
+                </div>
+
+                <!-- Comments -->
+                <div class="form-group">
+                    <label for="comments">Comments</label>
+                    <textarea
+                        class="form-control"
+                        id="comments"
+                        name="comments"
+                        placeholder="Your comments"
+                        rows="6"
+                        maxlength="6000"
+                        required></textarea>
+                </div>
+
+                <!-- Name -->
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required>
+                </div>
+
+                <!-- Submit -->
+                <div class="form-group">
+                    <button type="submit" class="btn btn-warning btn-lg btn-block">
+                        SUBMIT FEEDBACK
+                    </button>
+                </div>
+
+            </form>
+
+            <!-- Messages -->
+            <div id="success_message" class="alert alert-success" style="display:none;">
+                Feedback submitted successfully!
+            </div>
+
+            <div id="error_message" class="alert alert-danger" style="display:none;">
+                Sorry, something went wrong. Please try again.
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
